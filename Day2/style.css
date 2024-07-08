@@ -1,4 +1,4 @@
-/* 
+/* Remember!
     Tag
     Class 
     Id 
@@ -7,7 +7,7 @@
     !rule: 
     class we can nested but id cannot!
 */
-
+/* 
 *{
     color: green;
     background-color: black;
@@ -17,8 +17,8 @@ body{
     background-image: url("https://th.bing.com/th/id/OIP.RdggIgcEwT9M90AIzpLZgQHaEc?w=286&h=183&c=7&r=0&o=5&pid=1.7");
     background-repeat: no-repeat;
     background-size: cover;
-}
-p{
+} */
+/* p{
     color : teal;
     font-size: 50px;
     font-weight: bodler;
@@ -33,4 +33,24 @@ p{
 #heading { 
     color : orange;
     font-family: sans-serif;
+} */
+
+
+
+.box1{
+    width: 83rem;
+    /* px, %, rem */
+    height: 100vh;
+    background-color: yellowgreen;
+}
+.box2{
+    width: 100%;
+    /* px, %, rem */
+    height: 100vh;
+    background-color: teal;
+}
+.child1{
+    width: 50%;
+    height: 500px;
+    background-color: brown;
 }
