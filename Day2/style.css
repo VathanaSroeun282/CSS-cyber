@@ -1,0 +1,36 @@
+/* 
+    Tag
+    Class 
+    Id 
+    Global selector
+
+    !rule: 
+    class we can nested but id cannot!
+*/
+
+*{
+    color: green;
+    background-color: black;
+}
+body{
+    background-color: black;
+    background-image: url("https://th.bing.com/th/id/OIP.RdggIgcEwT9M90AIzpLZgQHaEc?w=286&h=183&c=7&r=0&o=5&pid=1.7");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    color : teal;
+    font-size: 50px;
+    font-weight: bodler;
+}
+.text{
+    color: rgb(52, 22, 22);
+    font-size:20px;
+}
+.box{
+    font-size: 50px;
+}
+#heading { 
+    color : orange;
+    font-family: sans-serif;
+}
