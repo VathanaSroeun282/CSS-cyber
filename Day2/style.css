@@ -51,12 +51,16 @@ body{
     height: 500px;
     background-color: brown;
 } */
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .container{
-    display: flex;
     width: 100%;
     height: 500px;
     background-color: black;
+    display: flex;
 }
 .child1{
     width: 30%;   
@@ -64,6 +68,13 @@ body{
 }
 .child2{
     width: 50%;   
+    background-color: blue ;
+    /*margin :  ; short hand!  */
+    /* margin: 30px 40px 50px 50px; */
+    margin : 20px 40px 30px; /* top left-right bottom*/
+    /* padding: ;
+
+    border: ; */
 }
 .child3{
     width: 20%;   
@@ -71,4 +82,77 @@ body{
 }
 .child1,.child2, .child3{
     height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 500px;
+    background-color: darkgrey;   
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    /* value of align-item : start,center, end */
+    
+    /* value of justify-content : start, center, end, space-around, space-between, space-evenly */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 20px;
+}   
+.main>div{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+} 
+.main>div:nth-child(2) .box1, .main>div:nth-child(2) .box2, .main>div:nth-child(2) .box3, .main>div:nth-child(2) .box4, .main>div:nth-child(2) .box5{
+    animation: none;
+    background-image: none;
+    border-radius: 0px;
+    height: 100px;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.box1, .box2, .box3, .box4, .box5{
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+    animation: spin 2s linear infinite;
+    background-size: cover;
+    border-radius: 100%;
+    box-shadow: 10px 10px 10px black;
+}
+.box3, .box4{
+    background-position: center;
+}
+.box1{
+    /* background-color: aquamarine; */
+    background-image: url("data:image/jpeg;base64,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");
+}
+.box2{
+    /* background-color: green; */
+    background-image: url("https://th.bing.com/th?id=OIP.-fRLX2b6tlZ8h5gwuSZQ-AHaF1&w=281&h=221&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2");
+}
+.box3{
+    /* background-color: blueviolet; */
+    background-image: url("https://th.bing.com/th?id=OIP.CN6EaO7UwVPFjqMk7_Hk_gHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2");
+}
+.box4{
+    /* background-color: blue; */
+    background-image: url("https://th.bing.com/th/id/OIP.a51qXMjaR8p6vcmEuVIcYwHaE7?w=304&h=202&c=7&r=0&o=5&pid=1.7");
+}
+.box5{
+    /* background-color: violet; */
+    background-image: url("https://th.bing.com/th/id/OIP.eiF_RmTbWVrbpHUunFJvygHaHa?w=180&h=180&c=7&r=0&o=5&pid=1.7");
+}
+
+/* animation: spin 2s linear infinite; Apply the spin animation */
+
+/* Define the keyframes for the spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
